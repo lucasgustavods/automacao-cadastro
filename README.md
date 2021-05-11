@@ -7,7 +7,7 @@
 Para fazer a aplicação rodar no **Ubuntu** basta clonar o repositório, e dentro da pasta raiz do projeto(./automacao-cadastro) rodar o comando:
 > npx cypress open
 
-Para rodar com o **Windows** é simples, basta baixar o zip do repositório [aqui](https://github.com/lucasgustavods/automacao-cadastro/archive/refs/heads/main.zip) e extrair arrastando o arquivo, logo após, baixar o zip do Cypress [aqui](https://download.cypress.io/desktop), extrair arrastando o arquivo e rodar o executavel `Cypress.exe`, e arrastar a pasta do projeto para dentro da janela do executavel.
+Para rodar com o **Windows** é simples, basta baixar o zip do repositório [aqui](https://github.com/lucasgustavods/automacao-cadastro/archive/refs/heads/main.zip) e extrair arrastando o arquivo(importante não clicar em descompactar pois pode criar pastas adicionais que dificultam o funcionamento correto da aplicação), logo após, baixar o zip do Cypress [aqui](https://download.cypress.io/desktop), extrair arrastando o arquivo e rodar o executavel `Cypress.exe`, e arrastar a pasta do projeto para dentro da janela do executavel.
 
 Com a janela do Cypress aberta, tanto para o Ubuntu quanto para o windows, clicar em `cadastro.spec.js`
 
