@@ -13,6 +13,7 @@ Passos utilizados no **Ubuntu 20.04.2 LTS**, instalação do Cypress via npm (cr
 	
 Instalar nodejs e npm:
 > sudo apt install nodejs and npm
+
 > sudo apt install build-essential
 
 Dependencias:
