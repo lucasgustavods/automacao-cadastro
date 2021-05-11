@@ -4,7 +4,17 @@
 `versão npm 6.14.4`
 `versão cypress 7.2.0`
 
-Para fazer a aplicação rodar no **Ubuntu** basta clonar o repositório, e dentro da pasta raiz do projeto(./automacao-cadastro) rodar o comando:
+Para fazer a aplicação rodar no **Ubuntu** basta clonar o repositório e rodar os comandos:
+
+Caso não tenha nodejs e npm instalados:
+> sudo apt install nodejs and npm
+
+> sudo apt install build-essential
+
+Dependencias:
+> apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
+ 
+Caso tenha nodejs, npm e dependencias (versões diferentes das informadas podem apresentar falha) instaladas, dentro da pasta raiz do projeto(./automacao-cadastro) executar o comando:
 > npx cypress open
 
 Para rodar com o **Windows** é simples, basta baixar o zip do repositório [aqui](https://github.com/lucasgustavods/automacao-cadastro/archive/refs/heads/main.zip) e extrair arrastando o arquivo(importante não clicar em descompactar pois pode criar pastas adicionais que dificultam o funcionamento correto da aplicação), logo após, baixar o zip do Cypress [aqui](https://download.cypress.io/desktop), extrair arrastando o arquivo e rodar o executavel `Cypress.exe`, e arrastar a pasta do projeto para dentro da janela do executavel.
