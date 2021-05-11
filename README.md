@@ -1,5 +1,8 @@
 # automacao-cadastro
 ## Automação de um cadastro simples
+`versão nodejs v10.19.0`
+`versão npm 6.14.4`
+`versão cypress 7.2.0`
 
 Para fazer a aplicação rodar no **Ubuntu** basta clonar o repositório, e dentro da pasta raiz do projeto(./automacao-cadastro) rodar o comando:
 > npx cypress open
@@ -41,11 +44,19 @@ pastas com as funções(index.js) e elementos(elements.js)
 
 ## Cenários de Testes:
 
-| Passo | Ação | Validação |
-| --- | --- | --- |
-| `git status` | Lista de todos os arquivos *modificados ou novos* | |
-| `git diff` | Mostra as diferenças do arquivo que **não foram** preparadas | |
+| Passo | Ação | Validação | Status |
+| --- | --- | --- | --- |
+| 01 | Deve acessar a pagina inicial de cadastro|Request deve apresentar status 200|Aprovado com ressalvas|
+| 02 | Preencher campos simples de nome sobrenome e endereço|O campo deve ficar registrado|Aprovado|
+| 03 | Preencher email e telefone | O campo deve ficar registrado|Aprovado|
+| 04 | Preencher genero e hobbies|O campo deve ficar registrado e a checkbox deve ser deselecionada|Aprovado|
+| 05 | Selecionar idiomas e skills |Combobox de idioma deve ser adicionado e excluido e skill validado|Aprovado|
+| 06 | Selecionar pais, pais pre-definido e data de nascimento|campos devem registrar e pais pre-definido pesquisar digitando|Aprovado|
+| 07 | Inserir senha |O campo deve ficar registrado e verificar se são iguais|Aprovado|
+| 08 | Finalizar cadastro |Resposta do servidor deve apresentar status 200|Reprovado|
 
-versão nodejs v10.19.0
-versão npm 6.14.4
-versão cypress 7.2.0
+**Observações.:**
+
+**Passo 01(aprovado com ressalvas): Por se tratar de uma aplicação web com multiplos acessos, pode apresentar instabilidade no sistema, algumas das requisições podem não ter a resposta esperada, o que pode ocasionar na quebra de algumas das outras funcionalidades, um refresh pode resolver.**
+
+**Passo 08(reprovado): Ao clicar em submit, a validação não apresenta resposta do servidor a requisição.**
